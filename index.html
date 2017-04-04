@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Requre JS</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+ <button id="clickMe"> Click me </button>
+ <script data-main="config" src="require.js"></script>
+ <script>
+ //before require js
+ require(['config'], function() {
+ 	require(['customScripts/jqueryFile'])
+ });
+ </script>
+</body>
+</html>
